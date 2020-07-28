@@ -1,11 +1,16 @@
-@import '../../components/unit/kubeDesignUnit.scss';
+@import '../../scss/index.scss';
 @import 'bulma/sass/components/Navbar.sass';
+
 
 .navbar{
     position: fixed;
     width: 100vw;
-    background-color: #eff4f9;
+    background-color: $light-color02;
     height: 6.4rem;
+    .navbar-item {
+        padding: 0 2rem;
+        border-radius: 0.4rem;
+    }
 }
 .navbar-item img {
     max-height: 4rem;
