@@ -1,0 +1,16 @@
+@import '../../components/unit/kubeDesignUnit.scss';
+
+.hero{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 6rem;
+    height: calc(100vh - 6rem);
+    padding: 0 2rem 2rem 2rem;
+}
+.Documents{
+    width: calc(100vw - 24rem);
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 2rem;
+}

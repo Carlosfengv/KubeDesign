@@ -1,0 +1,86 @@
+# Sidebar navigation
+
+- label: 'Index'
+  title: 首页
+  type: Index
+  link: '/'
+- label: Quick Start
+  title: 快速开始
+  type: QuickStart
+  link: '/QuickStart'
+  items:
+    - label: 'Start'
+      title: '如何使用'
+      items: 
+        - label: 'CreateReactAppUse'
+          title: '在 Create React App 中使用'
+          link: '/QuickStart/CreateReactAppUse'
+- label: Foundation
+  title: 设计基础
+  type: Foundation
+  link: '/Foundation'
+  items:
+    - label: 'Colors'
+      title: '颜色'
+      items: 
+        - label: 'Color Palette'
+          title: '调色板'
+          link: '/Foundation/Colors/ColorPalette'
+        - label: 'Color Usage'
+          title: '色彩用例'
+          link: '/Foundation/Colors/ColorUsage'
+    - label: 'Typography'
+      title: '排版'
+      items: 
+        - label: 'Titles'
+          title: '标题'
+          link: '/Foundation/Typography/Titles'
+        - label: 'Paragraph'
+          title: '段落'
+          link: '/Foundation/Typography/Paragraph'
+        - label: 'Labels'
+          title: '标签'
+          link: '/Foundation/Typography/Labels'
+        - label: 'Lists'
+          title: '列表'
+          link: '/Foundation/Typography/Lists'
+- label: Components
+  title: 组件
+  type: Components
+  link: '/Components'
+  items:
+    - label: 'Actions'
+      title: '动作'
+      items: 
+        - label: 'Button'
+          title: '按钮'
+          link: '/Components/Actions/Button'
+    - label: 'Data Input'
+      title: '数据录入'
+      items: 
+        - label: 'Checkboxes'
+          title: '复选框'
+          link: '/Components/DataInput/Checkboxes'
+        - label: 'Radio Buttons'
+          title: '单选按钮'
+          link: '/Components/DataInput/RadioButtons'
+        - label: 'Toggles'
+          title: '切换'
+          link: '/Components/DataInput/Toggles'
+        - label: 'Range Input'
+          title: '滑动输入'
+          link: '/Components/DataInput/RangeInput'
+        - label: 'Text Input'
+          title: '文本输入'
+          link: '/Components/DataInput/TextInput'
+        - label: 'Select Input '
+          title: '选择器(类型)'
+          link: '/Components/DataInput/SelectInput'
+        - label: 'Multi-select Input'
+          title: '选择器(多选)'
+          link: '/Components/DataInput/MultiSelectInput'
+- label: Resources
+  title: 设计资源
+  type: Resources
+  link: '/Resources'
+    

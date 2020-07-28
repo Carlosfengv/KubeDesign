@@ -1,0 +1,9 @@
+@import '../../../components/unit/kubeDesignUnit.scss';
+@import 'bulma/sass/components/Menu.sass';
+
+.left{
+    width: 24rem;
+    overflow-y: auto;
+    height: inherit;
+    padding-top: 2rem;
+}
