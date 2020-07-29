@@ -1,4 +1,4 @@
-@import '../../../components/unit/kubeDesignUnit.scss';
+@import '../../../scss/index.scss';
 @import 'bulma/sass/components/Menu.sass';
 
 .left{
@@ -6,4 +6,50 @@
     overflow-y: auto;
     height: inherit;
     padding-top: 2rem;
+}
+
+//Menu样式待重构 KubeDesign Menu Component 后进行调整
+//menu
+$menu-list-line-height: 2rem;
+$menu-item-color: $title-color;
+
+
+.Sidebar{
+    .menu{
+        font-size: $size-small;
+        margin-bottom: 2.4rem;
+        .menu-label{
+            color: $dark-color01;
+            font-weight: 200;
+        }
+        hr{
+            display: inline-block;
+            margin-top: 2.4rem;
+            width: 5rem;
+            border-style: none;
+            border-bottom: 1px solid $light-color06;
+        }
+        &:last-child{
+            hr{
+                display: none;
+            }
+        }
+        .menu-list {
+            a{
+              padding: 0.8rem 0;
+              &:hover{
+                background: none!important;
+                font-weight: bold;
+                color: $dark-color06;
+                }
+              &.is-active{
+                background: none!important;
+                font-weight: bold;
+                color: inherit;
+              }
+            }
+            
+          }
+    }
+    
 }
