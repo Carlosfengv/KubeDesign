@@ -1,15 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import Navbar from "../Template/Navbar/index"
 
-import DocLayout from '../Template/DocLayout/index'
+const QuickStart = () => {
+
+return <>
+        
+       <Navbar></Navbar>
+
+      </>
+        
+        
 
 
-const QuickStart = () => (
-  <>
-    <DocLayout>
-    </DocLayout>
-  </>
-  
-)
+}
 
 export default QuickStart

@@ -5,40 +5,46 @@
  */
 
 // You can delete this file if you're not using it
-
 const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`) // highlight-line
 
-exports.createPages = ({ graphql, actions }) => {
+exports.onCreateNode = ({ node,actions }) => {
+  const { createNodeField } = actions // highlight-line
+  createNodeField({
+    node,
+    name: `slug`,
+    value: node.path,
+  })
+}
+
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/Template/test.js`)
-  // Query for markdown nodes to use in creating pages.
-  // You can query for whatever data you want to create pages for e.g.
-  // products, portfolio items, landing pages, etc.
-  // Variables can be added as the second function parameter
-  return graphql(`
-    query loadPagesQuery ($type: String!) {
-        allSidebarYaml (filter: {type: {eq: $type}}){
-            edges {
-              node {
-                title
-                type
-                id
-                items {
-                  label
-                  title
-                  items {
-                    label
-                    link
-                    title
-                  }
-                }
-              }
+  const result = await graphql(`
+    query {
+      allMdx {
+        edges {
+          node {
+            slug
+            frontmatter {
+              type
+              title
             }
           }
+        }
+      }
     }
-  `, { type: "Foundation" }).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
+  `)
+  result.data.allMdx.edges.forEach(({ node }) => {
+    console.log(node.slug)
+    createPage({
+      path: node.slug,
+      component: path.resolve(`./src/Template/DefaultDocs/index.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.slug,
+        type: node.frontmatter.type
+      },
+    })
   })
 }

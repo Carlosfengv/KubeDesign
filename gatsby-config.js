@@ -45,18 +45,17 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        defaultLayouts: {
+        /* defaultLayouts: {
           default: require.resolve('./src/Template/DocLayout/index.js')
-        }
-        
+        } */
       },
     },
-    {
+    /* {
       resolve: "gatsby-plugin-page-creator",
       options: {
         path: `${__dirname}/Documents/`,
       },
-    },
+    }, */
     `gatsby-plugin-sass`,
   ],
 }

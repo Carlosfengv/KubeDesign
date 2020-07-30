@@ -4,10 +4,12 @@
   title: 首页
   type: Index
   link: '/'
+  haschild: False
 - label: Quick Start
   title: 快速开始
   type: QuickStart
   link: '/QuickStart'
+  haschild: True
   items:
     - label: 'Start'
       title: '如何使用'
@@ -19,6 +21,7 @@
   title: 设计基础
   type: Foundation
   link: '/Foundation'
+  haschild: True
   items:
     - label: 'Colors'
       title: '颜色'
@@ -48,6 +51,7 @@
   title: 组件
   type: Components
   link: '/Components'
+  haschild: True
   items:
     - label: 'Actions'
       title: '动作'
@@ -83,4 +87,5 @@
   title: 设计资源
   type: Resources
   link: '/Resources'
+  haschild: False
     

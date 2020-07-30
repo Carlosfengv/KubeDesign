@@ -49,10 +49,7 @@ export default function Navbar() {
                 <div className="navbar-item">
                     <div className="buttons">
                     <a className="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a className="button is-light">
-                        Log in
+                      <img alt="GitHub stars" src="https://img.shields.io/github/stars/Carlosfengv/KubeDesign?style=social"></img>
                     </a>
                     </div>
                 </div>

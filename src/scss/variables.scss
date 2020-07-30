@@ -124,6 +124,8 @@ $column-gap: 12px !default;
 
 // navbar
 $navbar-item-hover-background-color: $light-color03;
+$navbar-item-color: $text-color;
+$navbar-item-hover-color: $blue-color03;
 
 //Init Style
 a{
@@ -131,3 +133,6 @@ a{
   text-decoration: none;
 }
 
+
+//Html基础变量
+$background-color: $light-color02;

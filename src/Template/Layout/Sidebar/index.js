@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from "gatsby"
-import './style.scss'
+import '../Sidebar/style.scss'
 
 const Sidebar = ({sidebar}) => (
     <div className="left">
         <div className="Sidebar">
         {console.log('sidebar')}
         {console.log(sidebar)}
-        {sidebar.node.items.map((items,index)=>{
+        {sidebar.items.map((items,index)=>{
         return <aside className="menu" key={index}>
                 <p className="menu-label" key={index}>{items.title}</p>
                 {console.log('items')}
