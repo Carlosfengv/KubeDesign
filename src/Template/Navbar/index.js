@@ -25,7 +25,7 @@ export default function Navbar() {
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
             <Link to="/" className="navbar-item">
-                <img src={Logo} width="200"></img>
+                <img src={Logo} ></img>
             </Link>
             </div>
 
@@ -48,7 +48,7 @@ export default function Navbar() {
                 <div className="navbar-end">
                 <div className="navbar-item">
                     <div className="buttons">
-                    <a className="button is-primary">
+                    <a className="button is-primary" href="https://github.com/Carlosfengv/KubeDesign">
                       <img alt="GitHub stars" src="https://img.shields.io/github/stars/Carlosfengv/KubeDesign?style=social"></img>
                     </a>
                     </div>

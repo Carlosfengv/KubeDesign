@@ -45,6 +45,19 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-embedder`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              withWebp: true,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+        plugins: [`gatsby-remark-autolink-headers`, `gatsby-remark-images`],
         /* defaultLayouts: {
           default: require.resolve('./src/Template/DocLayout/index.js')
         } */

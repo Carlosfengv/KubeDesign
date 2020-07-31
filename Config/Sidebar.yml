@@ -12,11 +12,18 @@
   haschild: True
   items:
     - label: 'Start'
-      title: '如何使用'
+      title: '快速上手'
       items: 
         - label: 'CreateReactAppUse'
           title: '在 Create React App 中使用'
-          link: '/QuickStart/CreateReactAppUse'
+          link: '/QuickStart/Start/CreateReactAppUse'
+    - label: 'Customize'
+      title: '定制化'
+      items: 
+        - label: 'CustomizeTheme'
+          title: '定制主题'
+          link: '/QuickStart/Customize/CustomizeTheme'
+      
 - label: Foundation
   title: 设计基础
   type: Foundation
